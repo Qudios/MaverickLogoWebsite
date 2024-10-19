@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pfp {
+    height: 60px;
+    width: 5%;
+    border-radius: 50%;
+    float: left;
+}
+.blackbg {
+    background-color: #2a2a2a;
+    color: white;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+.arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 2rem;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #2a2a2a;
+}
